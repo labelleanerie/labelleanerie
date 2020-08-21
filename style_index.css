@@ -1,0 +1,1202 @@
+@font-face {
+    font-family: 'impact';
+    src: url('police/impact.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'roboto';
+        src: url('police/roboto.otf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+    @font-face {
+        font-family :'montserrat';
+        src : url('police/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    }
+    @font-face{
+        font-family:'arhermann';
+        src : url('police/ARHERMANN.ttf') format('truetype');
+    }
+ .slogan{
+     font-family: 'arhermann';
+     text-align:center;
+ }
+ .possible{
+     font-size: 10px;
+ }
+ 
+ /* animation contentu*/
+[class*="reveal-"]{
+    opacity:0;
+    transform:translateY(-30px);
+}
+.reveal-2{
+    transition-delay: 0.1s;
+
+}
+.reveal-3{
+    transition-delay: 0.2s;
+
+}
+.reveal-visible{
+    opacity:1;
+    transform:translateY(0);
+    transition:1.5s cubic-bezier(.5,0,0,1);
+}
+/*fin animation contentu*/
+
+    /*******/
+    .nav.fixed{
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index:10000000000000000000000;
+      }
+
+      .nav .fixed .dropdown {
+          z-index:10000000000;
+      }
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background:#ffac1c;
+        font-family: 'impact';
+        font-size: 24px;
+        margin: 0 auto;
+        height:50px ;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index:10000000000000;
+        
+        
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+       
+       
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        
+      }
+      
+      
+      /* Add an active class to highlight the current page */
+      .active {
+       color: black!important;
+       
+      }
+      
+      /* Hide the link that should open and close the topnav on small screens */
+      .topnav .icon {
+        display: none;
+      }
+      
+      /* Dropdown container - needed to position the dropdown content */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      /* Style the dropdown button to fit inside the topnav */
+      .dropdown .dropbtn {
+        font-size: 16px; 
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #ffac1c;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+        display:none;
+        position: absolute;
+        background-color: #ffac1c;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100000000000000000000;
+      }
+     
+      /* Style the links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropbtn{
+          font-size:24px!important;
+      }
+      
+      /* Add a dark background on topnav links and the dropdown button on hover */
+     
+      
+      /* Add a grey background to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #cc652b;
+        color: white;
+      }
+      
+      /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+      .dropdown:hover .dropdown-content {
+        display: block;
+        height:auto;
+       
+        
+      }
+      
+      
+      .box-right{
+          font-family: 'montserrat';
+      }
+      @media screen and (max-width: 600px) {
+      .topnav{
+          display:block;
+          height:auto;
+          width:50px;
+          position:fixed;
+          top:0;
+          right:0;
+      }
+      .header_container{
+
+        justify-content: center;
+        display:block!important;
+        align-items: center;
+        height:auto;
+        text-align:center;
+    }
+      .img_header{
+        margin-right:0!important;
+        width: 100px;
+        height:auto;}
+      .topnav .responsive{
+          position:fixed!important;
+          width:100%!important;
+          margin:0!important;
+      }
+        .topnav a, .dropdown .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+        .header_ami-txt{
+            display:none;
+         
+        }
+        
+        .header_groupe-txt{
+            display:none;
+        }
+      .formule_box{
+          display:block!important;
+          width:100%;
+      }
+      .box-left{
+          width:100%!important;
+          height:auto!important;
+          margin:0 !important;
+          
+      }
+      .box-left p {
+          font-size:26px!important;
+      }
+      .box-right{
+          width:100%!important;
+        height:auto!important;
+        margin:0 !important;
+      }
+      .tableau{
+        display:block!important;
+        text-align:center;
+    }
+    .cell-container{
+        display:block!important;
+    }
+    .header_handicap-txt {
+        display:none;
+    }
+    .contact-container{
+        display:block!important;
+        height:auto;
+        position:relative;
+        margin: 0 0 0 0 !important;
+        margin-left: 5%!important;
+        width:300px;
+        height:100%;
+        text-align:center;
+        
+    }
+    .contact-info{
+        margin:0 0 0 0 !important;
+        width:300px;
+        text-align:center;
+    }
+    .contact-info h2{
+        text-align:center!important;
+    }
+    .contact-form{
+        text-align:center;
+        width: 300px;
+        margin:0 0 0 0 !important;
+    }
+    .contact-wrapper{
+        background:none!important;
+       min-height: 975px!important;
+      
+        width:100%;
+    }
+    .adresse-icon:before{
+        display:none!important;
+    }
+    .phone-icon:before{
+        display:none!important;
+    }
+    .formule_box{
+        height:auto!important;
+    }
+    .container-button{
+        position:relative!important;
+        right:0!important;
+       bottom:0!important;
+    }
+    .pro_body-container{
+        height:auto!important;
+        width:100%;
+      
+    }
+    .pro_container{
+        position:relative!important;
+        width:95%!important;
+        top:0!important;
+        left:0!important;
+    }
+    .pro_container p{
+        font-size:16px!important;
+    }
+    .title-container h1 {
+        font-size:1.5em;
+
+    }
+    .title-container img{
+        width:15%;
+        height:auto;
+    }
+    .box-left p {
+        font-size:16px!important;
+    }
+    .box-title {
+        font-size:16px!important;
+    }
+    .header_container div{
+        font-size:20px;
+    }
+    .slogan{
+        font-size:20px;
+    }
+    .topnav a{
+        font-size:16px!important;
+    }
+    h1{
+        font-size:20px!important;
+    }
+    h2{
+        font-size:16px;
+    }
+   .wrapper p{
+        font-size:12px!important;
+    }
+    td{
+        font-size:12px!important;
+    }
+    .title-anim a{
+        font-size:12px!important;
+    }
+    .activites{
+        font-size:12px !important;
+        text-align:center !important;
+    }
+    .flip-card{
+        width:200px!important;
+        height:267px!important;
+    }
+      }
+      @media screen and (min-width:768px)and(max-width: 1024px){
+        .pro_body-container{
+            height:auto;
+          
+        }
+      
+      
+
+     
+      }
+      @media screen and (max-width: 1538px){
+      .box-right ul li{
+        font-size:16px !important;
+        line-height: 120%!important;
+    
+    }
+}
+      
+      /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+      @media screen and (max-width: 600px) {
+       .responsive{
+           width:100%;
+       }
+  
+        .topnav.responsive a.icon {
+          position: fixed;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive .dropdown {float: none;}
+        .topnav.responsive .dropdown-content {position: relative;}
+        .topnav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+   
+}
+header {
+    width:100%;
+    height:auto;
+    background : #cc652b;
+    font-family: 'impact';
+    font-size: 54px;
+    vertical-align: middle 
+}
+footer{
+    color :white;
+    background:#cc652b;
+    display:flex;
+}
+h1{
+    font-family: 'roboto';
+    text-align: center;
+}
+h2{
+    font-family: 'roboto';
+    margin-top:32px;
+    margin-bottom:32px;
+    font-weight: 900;
+}
+ul li a {
+    color:white;
+    text-decoration:none;
+}
+.header_container{
+
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    height:auto;
+}
+.img_header{
+    margin-right:100px;
+    width: 100px;
+    height:auto;}
+nav{
+    background:#ffac1c;
+    font-family: 'impact';
+    
+    margin: 0 auto;
+    height:auto;  
+}
+
+/*sticky nav bar */
+
+
+
+
+.active{
+    color:black;
+}
+.sub-nav{
+    font-size:20px;
+    z-index:300000000000000;
+}
+
+.img-header-ane{
+    text-align:center;
+    width:100%;
+   background: #1e6698;  
+   z-index:1;
+}
+.ane-header{
+    margin: 0 auto;
+    width:100%;
+    height:auto;
+    
+}
+.ane-text{
+    position:absolute;
+    top:300px;
+    left:50px;
+    width:90%;
+    height:auto;
+}
+.section-title{
+    background:#1e6698;
+    color:white;
+    margin:0 auto;
+}
+.title-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.wrapper{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.wrapper img{
+    width: 60%;
+    height:auto;
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+.wrapper p{
+    font-family:'montserrat';
+    text-align: justify;
+    font-size:20px;
+    line-height: 150%;
+    margin-bottom:16px;
+}
+.wrapper h3{
+    font-family: 'roboto';
+    margin-top:32px;
+    margin-bottom:16px;
+}
+.split-section {
+    display:flex;
+    justify-content: center;
+}
+.split-section_img-container{
+    position:relative;
+    width:35%;
+    margin:2%;
+}
+.split-section_img-container img{
+    display:block;
+    width:100%;
+}
+.btn-contact{
+    position:relative;
+    left:0;
+    bottom:150px;
+    height: 50px;
+    width:100%;
+    background: #ffac1c;
+    border: 1px solid #ffac1c;
+    font-size:20px;
+    font-family: 'montserrat';
+}
+.btn-formule{
+    position:relative;
+    right:0;
+    bottom:150px;
+    height: 50px;
+    width:100%;
+    background : #d93023;
+    border: 1px solid #d93023;
+    color:white;
+    font-weight: 700;
+    font-size:20px;
+    font-family: 'montserrat';
+}
+button a {
+    color:white;
+    font-weight: 700;
+    text-decoration:none;
+}
+.footer-wrapper{
+    height: 200px;
+    width:75%;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    color:black;
+}
+.footer-wrapper img{
+    width: 150px;
+    height: auto;
+}
+.footer-wrapper p{
+    width: 33%;
+    text-align:justify;
+    font-family:'montserrat';
+    line-height: 200%;
+    font-weight: 800;
+}
+.footer-wrapper ul{
+    list-style-type: none;
+    font-family: 'montserrat';
+    color:black
+}
+.footer-wrapper li{
+    margin-bottom:8px;
+    color:black;
+}
+.footer-wrapper li a {
+    color:black;
+    font-weight:800;
+}
+.text-logo{
+    text-align:center;
+    color: black;
+    font-family: impact;
+}
+.nav-title{
+    font-family: impact;
+    font-size:20px;
+    color:black;
+}
+/* FORMULES*/
+.bg-grey{
+    background:white !important;
+}
+.formule_box{
+    margin-top:100px;
+    width:100%;
+  
+    height:416px ;
+    display:flex;
+}
+.box-left{
+    width: 33%;
+    height:100%;
+    background : #1e6698;
+    text-align:center !important;
+}
+.box-right{
+   position:relative;
+    width:66%;
+    height:100%;
+    background:white;
+    box-shadow: 5px -5px 24px black;
+    text-align:left;
+}
+.box-right ul{
+    list-style: none;
+    line-height: 32px;
+    padding: 32px;
+    font-size : 20px;
+}
+.box-right-title{
+    font-size : 26px;
+    font-weight:700;
+    margin-bottom:16px;
+}
+.box-title{
+    position:relative;
+    top:20%;
+    right:0%;
+    margin: auto auto;
+    padding: 16px;
+    font-size:36px !important;
+    font-weight: 700;
+    color:white;
+    text-align:center !important;
+}
+.mb{
+    margin-bottom:100px;
+}
+.bold{
+    font-weight: 700!important;
+}
+.container-button{
+    position:absolute;
+    bottom:16px;
+    right:20%;
+}
+.button-contact{
+    height:30px;
+    width:150px;
+    background : #d93023;
+    border:none;
+    color:white !important;
+    font-weight:700 !important;
+    margin-right:100px;
+}
+.button-savoir{
+    height:30px;
+    width:150px;
+    background: #ffac1c;
+    border:none;
+    color:white !important;
+    font-weight:700 !important;
+}
+/* CONTACT*/
+.contact-wrapper{
+    background:url('img/ane-header.png') no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    height:100%;
+    width:100%;
+}
+.contact-container{
+    display:flex;
+    align-items: center;
+    width:1000px;
+    height: 500px;
+    margin:auto;
+   position:relative;
+   top:50px;
+    background:rgba(255, 255, 255,0.7);
+    border:1px solid rgba(255, 255, 255,0.7);
+    border-radius: 10px;
+}
+.contact-info{
+    margin: 0 auto;
+   
+
+}
+.contact-info img{
+    width:200px;
+    height:auto;
+}
+.contact-info h2{
+    font-family: 'impact';
+    text-align:center;
+}
+.contact-info ul{
+    list-style: none;
+    margin-top:16px;
+}
+.adresse-icon{
+    height:20px;
+    font-weight:700;
+    position:relative
+}
+.adresse-icon:before{
+    content:'';
+    width:32px;
+    height:32px;
+    background :url("img/map-marked-alt-solid.svg");
+    position: absolute;
+    left:-50px;
+    top:16px;
+}
+.phone-icon:before{
+    content:'';
+    width:32px;
+    height:32px;
+    background :url("img/phone-square-alt-solid.svg") no-repeat;
+    position: absolute;
+    left:-50px;
+    top:5px;
+}
+.phone-icon{
+    height:20px;
+    font-weight:700;
+    position:relative
+}
+.fb-icon:before{
+    content:'';
+    width:32px;
+    height:32px;
+    background :url("img/facebook.png") no-repeat;
+    position: absolute;
+    left:-50px;
+    top:5px;
+}
+.fb-icon{
+    height:20px;
+    font-weight:700;
+    position:relative;
+    color:black!important;
+}
+.fb-icon a{
+    color:black!important;
+}
+.contact-form{
+    margin: 0 auto;
+    
+    
+}
+.contact-form h2{
+    text-align:center;
+    margin-bottom:8px;
+
+}
+.contact-form h3{
+    font-weight:200;
+    color:#676767;
+    text-align:center;
+}
+.contact-form form{
+    margin-top: 12px;
+    display:flex;
+    flex-direction:column;
+}
+.contact-form input, .contact-form textarea{
+    margin-top:8px;
+    margin-bottom:8px;
+    border-radius: 15px;
+    background:#c6c4c4;
+    font-family: 'roboto';
+    border:none;
+padding:3px;
+box-shadow: 10px 5px 5px #353535;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    padding-left:16px;
+    margin-top:5px;
+    margin-bottom:5px;
+    color: #353535;
+    
+}
+.contact-form input[type="submit"]{
+    margin:0 auto;
+    width:200px;
+    background: #c1442e;
+    color:white;
+    font-weight: 700;
+    box-shadow: none;
+    margin-top:16px;
+    height:25px;
+}
+
+
+/*groupe---------------------------*/
+.header_groupe{
+    width:100%;
+    position:relative;
+}
+.header_groupe img{
+    width:100%;
+    height:auto;
+    
+}
+.header_groupe-txt{
+    
+    position:absolute;
+    background:rgba(255, 255, 255,0.7);
+    border-radius: 10px;
+    height: 200px;
+    width:800px;
+    top:15%;
+    left:25%;
+
+}
+.header_groupe-txt p{
+    position:relative;
+   padding:1%;
+    margin: auto;
+    font-size:25px;
+    width:75%;
+    heigth:100%;
+    line-height: 150%;
+}
+.activites{
+    font-size:20px;
+    line-height: 150%;
+    list-style: none;
+    text-align:left;
+    font-family:'montserrat';
+}
+.activité li {
+    line-height: 150%;
+}
+.tableau{
+    display:flex;
+    text-align:center;
+}
+.col{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    vertical-align: middle;
+   
+}
+.col div{
+    display:table;
+    height:150px;
+    width:100%;
+    border:1px solid white;
+    
+}
+.col p {
+    vertical-align:middle;
+    display:table-cell;
+    text-align:center;
+    margin:0!important;
+    
+}
+.cell-container{
+    width:100%;
+    display:flex!important;
+    flex-direction:row;
+    border:1px solid white;
+}
+.cell-container div{
+    width:100%;
+    border:none;
+    border-bottom:1px solid white !important;
+}
+.title-picnic{
+    background:#1e6698;
+    color:white;
+    font-weight:700;
+}
+.title-anim{
+    background:#d93023;
+    color:white;
+    font-weight:700;
+}
+.title-bivouac{
+    background: #ffac1c;
+    color:white;
+    font-weight:700;
+}
+.durer-picnic{
+    background:#73b6e5;
+    color:white;
+}
+.durer-anim{
+    background:#df6f67;
+    color:white;
+}
+.durer-bivouac{
+    background:#ffc869;
+    color:white;
+}
+.accomp-picnic{
+    background:#2e99e5;
+    color:white;
+}
+.accomp-anim{
+    background:#a6241b;
+    color:white;
+}
+.accomp-bivouac{
+    background:#cc8916;
+    color:white;
+}
+.prix-picnic{
+    background:#5587aa;
+    color:white;
+   
+}
+.prix-anim{
+    background:#59130e;
+    color:white;
+ 
+}
+.prix-bivouac{
+    background:#806434;
+    color:white;
+}
+table{
+    table-layout: fixed;
+    width:100%;
+    margin: 0 auto;
+    font-family: 'roboto';
+    margin-bottom:48px;
+}
+tr{
+    height:100px;
+    
+}
+td{
+  word-break: break-word;
+   font-size:20px;
+   font-weight: 300;
+   padding:16px;
+}
+th{
+    font-size:20px;
+    font-weight: 700;
+}
+.title-anim a{
+    width:100%;
+    height:100%;
+    border:none;
+    font-size:20px;
+    font-weight:700;
+    color:white;
+    text-decoration:none;
+}
+ .contacter:hover{
+    background:#FFAC1C;
+}
+.contacter{
+    height:75px;
+   line-height:75px;
+   vertical-align:middle;
+   border-top:1px solid white;
+   font-family:'roboto',sans-serif;
+   
+   margin-bottom:16px;
+}
+
+/* entre amis */
+.header_ami-txt{
+   padding:16px;
+   text-align: center;
+    position:absolute;
+    background:rgba(255, 255, 255,0.7);
+    border-radius: 10px;
+    height: 300px;
+    line-height: 150%;
+    width:800px;
+    top:15%;
+    right:25%;
+    font-size:26px;
+
+}
+@media screen and (max-width: 1025px){
+    .header_ami-txt{
+        right:10%;
+    }
+    .footer-wrapper p{
+        font-size:12px!important;
+    }
+}
+@media screen and (min-width:1026px)and (max-width: 1441px){
+    .header_ami-txt{
+        right:22%;
+    }
+   
+}
+
+
+/*PRO*/
+.pro_body-container{
+    position:relative;
+    text-align:center;
+    margin-bottom:-10px;
+    height:auto;
+}
+.bg-img{
+    margin:auto;
+    width: 50%;
+    height:auto;
+}
+.pro_container{
+    position:relative;
+   
+    width:75%;
+    height: auto;
+    padding:40px;
+    margin : 0 auto;
+   
+}
+.pro_body-container img{
+    margin-top: 32px;
+}
+.pro_container p{
+    text-align:justify;
+    font-size:20px;
+    line-height: 150%;
+    font-family: 'montserrat';
+
+}
+.pro_tarif{
+    text-align:center !important;
+}
+.pro_contact{
+    margin:0 auto;
+    height:30px;
+    width:150px;
+    background : #d93023;
+    border:none;
+    color:white !important;
+    font-weight:700 !important;
+    margin-top:25px;
+}
+.pro_contact:hover{
+    background: #ffac1c;
+}
+.bold{
+    font-weight: 900;
+}
+/*handicap*/
+
+.header_handicap-txt{
+    padding:16px;
+    position:absolute;
+    background:rgba(255, 255, 255,0.7);
+    border-radius: 10px;
+    height: 350px;
+    width:850px;
+    top:15%;
+    left:25%;
+    line-height: 150%;
+    text-align:justify;
+    font-size:26px;
+    font-family: 'roboto','sans-serif';
+}
+.randolin {
+    width:40% !important;
+    height:auto;
+}
+
+/* PAGE ANE*/
+
+.cards_container{
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    width:75%;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 33%;
+    height: 400px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color:white;;
+    color: black;
+  }
+  .flip-card-front img{
+      margin:0;
+      width:100%;
+      height:auto;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #ffac1c;
+    color: white;
+    transform: rotateY(180deg);
+    height:100%;
+  }
+  .flip-card-back h1{
+      margin-top:10px;
+      margin-bottom:50px;
+  }
+  .flip-card-back p {
+      padding-right:10px;
+      padding-left:10px;
+      text-align:center;
+  }
+
+
+
+@media screen and (max-width :600px){
+    .ane-text{
+        position:absolute;
+        top:200px;
+        left:0;
+        width:100%;
+        height:auto;
+    }
+
+    .footer-wrapper{
+        height: auto;
+        width:100%;
+       margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+    }
+    .footer-wrapper img{
+     text-align: center;
+     margin: auto;
+        
+        height: auto;
+    }
+    .footer-wrapper p{
+        margin-top:16px;
+        margin-bottom:16px;
+        width: 75%;
+        text-align:justify;
+        font-size:10px;
+    }
+    .btn-contact{
+        position:relative;
+        left:0;
+        bottom:100px;
+        height: 30px;
+        width:100%;
+        background: #ffac1c;
+        border: 1px solid #ffac1c;
+        font-size:10px;
+    }
+    .btn-formule{
+        position:relative;
+        right:0;
+        bottom:100px;
+        height: 30px;
+        width:100%;
+        background : #d93023;
+        border: 1px solid #d93023;
+        color:white;
+        font-weight: 700;
+        font-size:10px;
+    }
+    .box-right ul{
+        font-size:12px;
+    }
+    .box-right-title{
+        font-size:16px;
+    }
+   
+   
+}
